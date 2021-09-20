@@ -1,0 +1,79 @@
+html
+{
+    font-family: monospace;
+}
+
+body{
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(26, 10, 245);
+    color: white;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Jura', sans-serif;
+}
+.container ul
+{
+    list-style-type: none;
+}
+
+.main-menu {    
+    align-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 80px;
+
+}
+.mail
+{
+    float: right;
+}
+.main-menu a:hover {
+    color:rgb(224, 12, 178);
+    transition: 0.5s;
+}
+
+main p{
+    text-align: justify;
+}
+.avatar {
+    height: 350px;
+    text-align: left;
+    margin: 3rem 0;
+}
+.avatar img{
+    float:left;
+    height: 100%;
+    margin-right: 20px;
+    border: 4px solid #000000;
+}
+
+
+.footer {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(26, 10, 245);
+    color: white;
+    padding: 40px 40px 40px;
+    margin-top: 2rem;
+    font-family: 'Jura', sans-serif;
+    padding-bottom: 40px;
+    
+
+}
+
+.aboutme
+{
+    font-size: 14px;
+}

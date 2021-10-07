@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Press Start 2P", cursive;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  justify-content: space-between;
+}
+.header__heading {
+  color: cornsilk;
+  text-align: center;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.header__menu-item {
+  display: block;
+  padding: 20px;
+  color: aliceblue;
+  background: rgba(75, 75, 75, 0.281);
+  transition: .4s;
+  transition-property: background;
+}
+.header__menu-item:hover {
+    background: rgba(75, 75, 75, 0.581);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.section{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section__heading{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.section__image{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.footer{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}

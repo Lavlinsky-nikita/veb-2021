@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Доставка еды</title>
+</head>
+
+<body>
+    <!-- Шапка сайта с лого  и меню -->
+    <header class="header">
+        <!-- Меню сайта -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <!-- Логотип -->
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+                    <img src="./images/logo.png" alt="logo" width="100" class="d-inline-block align-text-top">
+                    Суши-заяц
+                </a>
+                <!-- Кнопка открытия меню, если открыть на телефоне-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Меню со списком ссылок -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto row-col-lg-4 fs-5 align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rest">Рестораны</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Меню</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#options">Опции</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Основная часть сайта -->
+    <main>
+        <!-- Уведомление, если запрос к серверу прошёл успешно -->
+        <div class="mt-2 d-none alert alert-success" role="alert">
+            Заказ успешно обработан!
+        </div>
+        <!-- Карусель с изображениями -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Кнопки для переключения между картинками -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- Содержимое карусели - картинки -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/carusel1.jpg" class="d-block w-100" alt="carousel1" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carusel2.png" class="d-block w-100" alt="carousel3" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/carusel3.jpg" class="d-block w-100" alt="carousel3" height="500">
+                </div>
+            </div>
+            <!-- Кнопки следующий и предыщий -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+        <!-- Часть с информацией о доставке, приемущества -->
+        <section class="about" id="about">
+            <div class="container text-center">
+                <h2 class="mb-3 pt-5">О нас</h2>
+            </div>
+            <div class="container text-center">
+                <div class="row container">
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <i class="bi bi-arrow-up"></i>
+                        <p>Лучшая доставка суши 2022</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <i class="bi bi-cash"></i>
+                        <p>Самые низкие цены</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <i class="bi bi-speedometer"></i>
+                        <p>Самая быстрая доставка</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <i class="bi bi-clock-fill"></i>
+                        <p>Работаем 24/7</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>Круглосуточная связь с поддержкой</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-center mb-4">
+                        <i class="bi bi-emoji-sunglasses-fill"></i>
+                        <p>Крутая команда</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <!-- Форма для выбора заведения, откуда доставка -->
+        <section id="rest">
+            <div class="container text-center">
+                <h2 class="mb-3 pt-5">Выбор предприятия общественного питания</h2>
+            </div>
+            <div class="container">
+                <form class="row g-4 align-items-center">
+                    <div class="col-md-6 px-3 py-1">
+                        <label for="adminArea" class="form-label">Административный округ:</label>
+                        <select id="adminArea" class="form-select">
+                            <option selected>Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 px-3 py-1">
+                        <label for="district" class="form-label">Район:</label>
+                        <select id="district" class="form-select">
+                            <option selected>Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 px-3 py-1">
+                        <label for="type" class="form-label">Тип:</label>
+                        <select id="type" class="form-select">
+                            <option selected>Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 px-3 py-1">
+                        <label for="discount" class="form-label">Социальная скидка:</label>
+                        <select id="discount" class="form-select">
+                            <option selected>Не выбрано</option>
+                            <option value="true">Есть</option>
+                            <option value="false">Нет</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 px-3 py-1 text-lg-center align-self-end">
+                        <button type="submit" class="btn btn-success w-100">Найти</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Таблица со списком заведений доставки, которые соответствуют полям в форме -->
+            <div class="container border-bottom border-2 table-responsive my-5">
+                <table class="table">
+                    <thead class="align-middle border-2">
+                        <tr>
+                            <th scope="col">Название</th>
+                            <th scope="col">Тип</th>
+                            <th scope="col">Адрес</th>
+                            <th scope="col">Действия</th>
+                        </tr>
+                    </thead>
+                    <!-- Сюда вставляются рестораны, которые пришли с сервера -->
+                    <tbody id="table-restaraunt">
+                    </tbody>
+                </table>
+                <!-- Пагинация, переход между страницами (не работает) -->
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Предыдущая">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Следующая">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+        </section>
+        <!-- Меню выбранного заведения (статическое - не приходит с сервера) -->
+        <section class="container py-5" id="menu">
+            <div class="text-center">
+                <h2 class="mb-3">Меню</h2>
+                <div class="mx-auto mb-3 "></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <!-- Карточки товаров в меню -->
+                <div class="card w-25 rounded-3 m-5">
+                    <img src="images/item.png" class="card-img-top" alt="sushi">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Суши</h5>
+                        <p class="card-text text-center">Лучшие суши на земле</p>
+                        <h5 class="card-cost text-center fw-bold">500 P</h5>
+                        <div class="my-3 d-flex justify-content-evenly">
+                            <button class="btn border border-3 rounded-circle count" id="btn-minus">-</button>
+                            <input class="w-25 border border-3" type="text" placeholder="0" disabled>
+                            <button class="btn border border-3 rounded-circle count" id="btn-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-25 rounded-3  m-5">
+                    <img src="images/item.png" class="card-img-top" alt="sushi">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Суши</h5>
+                        <p class="card-text text-center">Лучшие суши на земле</p>
+                        <h5 class="card-cost text-center fw-bold">500 P</h5>
+                        <div class="my-3 d-flex justify-content-evenly">
+                            <button class="btn border border-3 rounded-circle count" id="btn-minus">-</button>
+                            <input class="w-25 border border-3" type="text" placeholder="0" disabled>
+                            <button class="btn border border-3 rounded-circle count" id="btn-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-25 rounded-3  m-5">
+                    <img src="images/item.png" class="card-img-top" alt="sushi">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Суши</h5>
+                        <p class="card-text text-center">Лучшие суши на земле</p>
+                        <h5 class="card-cost text-center fw-bold">500 P</h5>
+                        <div class="my-3 d-flex justify-content-evenly">
+                            <button class="btn border border-3 rounded-circle count" id="btn-minus">-</button>
+                            <input class="w-25 border border-3" type="text" placeholder="0" disabled>
+                            <button class="btn border border-3 rounded-circle count" id="btn-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Блок с доп опциями, соц скидки, в два раза больше -->
+        <section class="py-5" id="options">
+            <div class="text-center container">
+                <h2 class="py-3">Дополнительные опции</h2>
+                <div class="d-flex flex-column w-50 mx-auto">
+                    <div class="d-flex mb-1 justify-content-between">
+                        <label class="form-check-label options" for="discount">Социальная скидка</label>
+                        <input class="my-auto ms-3" type="checkbox" id="discount">
+                    </div>
+                    <div class="d-flex py-1 justify-content-between">
+                        <label class="form-check-label options" for="more">В два раза больше</label>
+                        <input class="my-auto ms-3" type="checkbox" id="more">
+                    </div>
+                    <div class="border border-2 p-2 ordered">
+                        <div class="px-2 d-flex justify-content-between flex-lg-row flex-column">
+                            <p class="my-auto">Итого: <span id="cost">0Р</span></p>
+                            <button class="btn border btn-success my-2" type="button">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <!-- Поздвал сайта с сылками на соц сети -->
+    <footer class="footer">
+        <div class="container text-center py-3">
+            <p>OOO "Суши-заяц"</p>
+            <div class="row row-cols-lg-3 row-cols-1">
+                <div class="col">
+                    <a href=" tel:+79999099909"><i class="bi bi-telephone-fill"></i> Телефон: +7 (999) 909-99-09</a>
+                </div>
+                <div class="col">
+                    <a href="mailto:sushiRabit@gmail.com"><i class="bi bi-envelope-fill"></i> Почта:
+                        sushiRabit@gmail.com</a>
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram px-1"></i></a>
+                    <a href="https://ru-ru.facebook.com/"><i class="bi bi-facebook px-1"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

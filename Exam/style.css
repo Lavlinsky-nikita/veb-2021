@@ -1,0 +1,60 @@
+:root {
+  --main: #faf0be;
+  --special: #d35817;
+  --olive: #556832;
+  --brown: #964b00;
+  --cherry: #de3163;
+}
+.header {
+  background-color: var(--main);
+  border-bottom: 4px solid;
+  border-color: var(--brown);
+}
+.about {
+  background-color: var(--main);
+  font-size: large;
+  color: var(--special);
+}
+.about i {
+  font-size: 54px;
+  color: var(--olive);
+}
+hr {
+  background-color: var(--cherry);
+  opacity: 1;
+  height: 5px !important;
+  margin: 0;
+}
+select {
+  background-color: var(--brown) !important;
+  color: var(--main) !important;
+}
+table {
+  border-color: var(--cherry) !important;
+}
+input {
+  background-color: var(--cherry) !important;
+  color: var(--main) !important;
+  text-align: center;
+}
+input::placeholder {
+  color: var(--main) !important;
+}
+
+button.count {
+  background-color: var(--main) !important;
+  color: var(--olive) !important;
+  border-color: var(--cherry) !important;
+  width: 50px;
+  height: 50px;
+}
+label.options {
+  font-size: 20px !important;
+  margin: 10px 0;
+}
+#cost {
+  color: var(--special) !important;
+}
+.ordered {
+  font-size: 24px !important;
+}

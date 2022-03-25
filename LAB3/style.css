@@ -1,72 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* отсутп 0 */
+  padding: 0;  /* Внутренний отсут 0 */
+  box-sizing: border-box; /* Общая ширина и высота элемента, которые мы задаем */
 }
 html {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive; /* Шрифт */
 }
 .header {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Определяет тип */
+  flex-direction: column; /* Элементы отображаются вертикально */
   background-image: url(./header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px;
-  justify-content: space-between;
+  background-position: center; /* Изобраэение по центру */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  background-size: cover; /* Размер изображения (не становиться сплющенным) */
+  height: 250px; /* Высота элемента */
+  justify-content: space-between; /*Равномерное распределние первый в начале, последний в конце*/
 }
 .header__heading {
   color: cornsilk;
-  text-align: center;
+  text-align: center; /* содержимое центрируется в линейном блоке */
 }
 .header__menu {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
+  display: flex; /* Определяет тип */
+  justify-content: space-evenly; /*Равномерное распределние с промежутком  */
+  list-style: none; /* Убирает точки */
 }
 .header__menu-item {
-  display: block;
-  padding: 20px;
+  display: block; /* Определяет тип */
+  padding: 20px; /* Внутренний отсут 20 */
   color: aliceblue;
   background: rgba(75, 75, 75, 0.281);
-  transition: .4s;
-  transition-property: background;
+  transition: .4s;  /* Переход */
+  transition-property: background; /* Переход */
 }
 .header__menu-item:hover {
     background: rgba(75, 75, 75, 0.581);
 }
 .main{
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Определяет тип */
+    flex-direction: column; /* Элементы отображаются вертикально */
 }
 article{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Определяет тип */
+    flex-wrap: wrap; /* Расположение в несколько линий */
     width: 100%;
-    justify-content: center;
+    justify-content: center; /* Элементы в центре */
 }
 .section{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 20px; /* Внутренний отсут 20 */
+    display: flex; /* Определяет тип */
+    flex-wrap: wrap; /* Расположение в несколько линий */
     width: 500px;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column; /* Элементы отображаются вертикально */
+    justify-content: space-between; /*Равномерное распределние первый в начале, последний в конце*/
 }
 .section__heading{
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: center; /* содержимое центрируется в линейном блоке */
+    margin-bottom: 10px; /* отступ снизу элемента*/
 }
 .section__image{
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* отступ снизу элемента*/
 }
 .footer{
-    display: flex;
+    display: flex; /* Определяет тип */
     height: 100px;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Элементы в центре */
+    align-items: center; /* Внешний отступ полей  центрируется в пределах поперечной оси */
 }

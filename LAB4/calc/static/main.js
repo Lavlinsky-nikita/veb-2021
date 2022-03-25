@@ -145,7 +145,12 @@ function clickHandler(event) {
 
 // Назначьте нужные обработчики событий.
 window.onload = function () {
+    // forEach -выполняет указанную функцию один раз для каждого элемента в массиве.
+    // target ссылкой на объект, который был инициатором
+    // addEventListener - регистрирует определённый обработчик события
     buttons.forEach(target => target.addEventListener('click', clickHandler))
 }
+// querySelectorAll - озвращает статический, содержащий все найденные элементы документа
 var buttons = document.querySelectorAll('.key')
+// querySelector - возвращает первый элемент документа
 var scr = document.querySelector('#screen')

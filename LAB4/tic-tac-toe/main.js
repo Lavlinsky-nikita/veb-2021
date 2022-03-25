@@ -1,4 +1,4 @@
-'use strict'
+
 
 function initBoard() {
     let board = document.getElementById('board');

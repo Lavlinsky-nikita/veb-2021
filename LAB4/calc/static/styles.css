@@ -1,52 +1,52 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 0; /* Внутренний отсут 0 */
+  margin: 0; /* отсутп 0 */
+  box-sizing: border-box; /* Общая ширина и высота элемента, которые мы задаем */
 }
 .calc-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
-  height: 200px;
-  margin: 0 auto;
+  display: flex; /* Определяет тип */
+  flex-direction: column; /* Элементы отображаются вертикально */
+  max-width: 200px; /* Максимальная ширина */
+  height: 200px; /* Высота элемента */
+  margin: 0 auto; /* отсутп 0 */
   background-color: darkgray;
 }
 .screen {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; /* отступ снизу элемента*/
+} 
 form {
   width: 100%;
 }
 input {
   width: 100%;
-  padding: 10px;
-  outline: none;
-  border: none;
+  padding: 10px; /* Внутренний отсут 10 */
+  outline: none; /* Контур */
+  border: none; /* Границы вокруг элементов */
   background-color: lightgray;
   color: green;
 }
 .buttons {
-  display: flex;
+  display: flex; /* Определяет тип */
 }
 .digits {
   width: 60%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5px;
-  padding-left: 8px;
+  display: flex; /* Определяет тип */
+  flex-direction: row; /* Элементы отображаются горизонтально */
+  flex-wrap: wrap; /* Расположение в несколько линий */
+  gap: 5px; /* Отсут между столбцами */
+  padding-left: 8px; /* Значение поля от левого края */
 }
 .other {
   width: 40%;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  gap: 5px;
-  padding-right: 8px;
+  display: flex; /* Определяет тип */
+  flex-direction: row-reverse;/* расположение элементов */
+  flex-wrap: wrap; /* Расположение в несколько линий */
+  gap: 5px; /* Отсут между столбцами */
+  padding-right: 8px; /* Значение поля от левого края */
 }
 .key {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  font-weight: bold;
+  border-radius: 50%; /* Скругление границ блока */
+  font-weight: bold; /* шрифт полужирный */
 }
